@@ -1,0 +1,29 @@
+    <!-- Masha block -->
+    <!--[if IE]>
+        <script type="text/javascript" src="{{ STATIC_URL }}masha/js/ierange.js"></script>
+    <![ENDIF]-->
+    <script type="text/javascript" src="{{ STATIC_URL }}masha/js/masha.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}masha/css/masha.css">
+    <script type="text/javascript">
+        {% if MASHA_CFG %}
+        var masha_cfg = {{ MASHA_CFG|safe }}
+        {% else %}
+        var masha_cfg = null;
+        {% endif %}
+        {% if MASHA_JQUERY %}
+        $(function(){
+            MaSha.instance = new MaSha(masha_cfg);
+        });
+        {% else %}
+        if(window.addEventListener){
+            window.addEventListener('load', function(){
+                MaSha.instance = new MaSha(masha_cfg);
+            }, false);
+        } else {
+            window.attachEvent('onload', function(){
+                MaSha.instance = new MaSha(masha_cfg);
+            });
+        }
+        {% endif %}
+    </script>
+    <!-- Masha block -->

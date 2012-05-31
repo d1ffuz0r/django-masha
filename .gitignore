@@ -1,0 +1,7 @@
+*.py[oc]
+build/
+dist/
+*DS_Store
+django_masha.egg-info
+MaSha/
+masha.js

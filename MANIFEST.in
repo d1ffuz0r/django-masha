@@ -1,0 +1,4 @@
+include Makefile
+include README.mkd
+recursive-include django_masha/static *.png *.jpg *.css *.js
+recursive-include django_masha/templates *.html

@@ -1,0 +1,55 @@
+#django-masha
+
+
+##Easy integration [MaSha](http://mashajs.com) to django-project
+
+
+###Setup
+
+>$ easy_inatll django-masha
+>
+>$ [sudo] pip install django-masha
+
+####Upgrade used version MaSha
+
+>git clone git://github.com/d1ffuz0r/django-masha.git
+>
+>cd django-masha
+>
+>make deps
+>
+>make build
+>
+>[sudo] python setup.py install
+
+####Use
+
+settings.py
+
+>INSTALLED_APPS = (
+>>...
+>
+>>'django_masha'
+>
+>)
+
+also you can setup settings MaSha
+
+>MASHA_CFG = {
+>
+>>'selectable': 'selectable'
+>
+>...
+>
+>}
+>
+>MASHA_JQUERY = True # if you use jQuery
+
+
+In template
+
+>{% load masha %}
+>
+>...
+>
+>{% masha_load %}
