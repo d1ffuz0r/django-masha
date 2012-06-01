@@ -1,4 +1,4 @@
-all: install
+all: dist
 	@echo 'django-masha installed'
 
 help:

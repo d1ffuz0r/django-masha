@@ -13,8 +13,9 @@ _____
 
   $ git clone git://github.com/d1ffuz0r/django-masha.git
   $ cd django-masha
-  $ make deps
-  $ make build
+  $ make
+  $ [sudo] make install
+  or
   $ [sudo] python setup.py install
 
 
