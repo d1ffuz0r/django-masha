@@ -33,7 +33,7 @@ also you can setup settings MaSha
 >
 >>'selectable': 'selectable'
 >
->...
+>>...
 >
 >}
 >
