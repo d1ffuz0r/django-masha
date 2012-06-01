@@ -46,4 +46,4 @@ In template
 >
 >...
 >
->{% masha_load %}
+>{% masha %}

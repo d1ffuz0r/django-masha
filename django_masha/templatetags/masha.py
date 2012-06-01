@@ -5,7 +5,7 @@ register = template.Library()
 
 
 @register.inclusion_tag('masha/masha.html')
-def masha_load():
+def masha():
     context = {'STATIC_URL': settings.STATIC_URL}
 
     if hasattr(settings, 'MASHA_CFG') and settings.MASHA_CFG:
