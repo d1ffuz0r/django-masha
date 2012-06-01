@@ -6,7 +6,7 @@ all:
 
 build:
 	@cp -rv ./MaSha/src/* ./django_masha/static/masha/
-	#@sed -e 's/..\/img/\/static\/img/g' ./MaSha/src/css/masha.css > ./django_masha/static/masha/css/masha.css
+	@sed -e 's/..\/img/\/static\/masha\/img/g' ./MaSha/src/css/masha.css > ./django_masha/static/masha/css/masha.css
 	@python setup.py build
 
 install:
@@ -16,6 +16,7 @@ deps:
 	@git clone git://github.com/SmartTeleMax/MaSha.git
 
 clean:
-	@rm -r build/
-	@rm -r django_masha.egg-info/
-	@rm -r MaSha/
+	@rm -rf build/
+	@rm -rf dist/
+	@rm -rf django_masha.egg-info/
+	@rm -rf MaSha/

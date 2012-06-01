@@ -14,7 +14,7 @@
     cursor: pointer;
     width: 48px;
     height: 48px;
-    background:url(../img/textselect/marker.png) -0px -0px no-repeat;
+    background:url(/static/masha/img/textselect/marker.png) -0px -0px no-repeat;
     }
 #marker-bar{
     border: 1px solid #ccc;
@@ -58,7 +58,7 @@
         cursor: pointer;
         width: 20px;
         height: 20px;
-        background: url(../img/textselect/social-icons.png) 20px 20px no-repeat;
+        background: url(/static/masha/img/textselect/social-icons.png) 20px 20px no-repeat;
         }
         .masha-social.twitter{
             background-position: 0 -20px;
@@ -102,7 +102,7 @@
     left: -5px;
     width: 33px;
     height: 33px;
-    background: url(../img/textselect/closemarker.png) -0px -0px no-repeat;
+    background: url(/static/masha/img/textselect/closemarker.png) -0px -0px no-repeat;
     }
     .user_selection.hover a.txtsel_close:hover, .user_selection_true.hover a.txtsel_close:hover {
         background-position: -0px -33px;
@@ -115,7 +115,7 @@
     height: 57px;
     width: 100%;
     visibility:hidden;
-    background: url(../img/textselect/upmsg_bg.png) repeat-x;
+    background: url(/static/masha/img/textselect/upmsg_bg.png) repeat-x;
     z-index: 9999;
     overflow:hidden;
     -webkit-transition: top .4s, visibility .1s linear .4s;
@@ -157,7 +157,7 @@
             position:absolute;
             right:0;
             width:19px;
-            background: url(../img/textselect/upmsg_closebtn.png) no-repeat -0px -0px;
+            background: url(/static/masha/img/textselect/upmsg_closebtn.png) no-repeat -0px -0px;
             }
             #upmsg-selectable .upmsg-selectable-inner .upmsg_closebtn:hover {
                 background-position: -0px -19px;
