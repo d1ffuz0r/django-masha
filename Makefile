@@ -1,5 +1,4 @@
 all: dist
-	@echo 'django-masha installed'
 
 help:
 	@echo 'deps - get MaSha from repository'
